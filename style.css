@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Neue Haas Grotesk Display Pro";
+}
+*::selection{
+    color: #fff;
+    background-color: #000000;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #f7f7f7;
+
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    padding: 1vw 1vw;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h3{
+    font-size: 1.7vw;
+    line-height: 1.4vw;
+    letter-spacing:-.3px;
+}
+.navbar{
+    display: flex;
+    gap: 40px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000000;
+    font-size: .8vw;
+}
+.links{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    padding: 12px 17px;
+}
+.navbar i{
+    font-size: 1vw;
+}
+.elem{
+    padding-top: 3.5vw ;
+}
+
+.page1 h1{
+    font-size: 16vw;
+    letter-spacing: -.9vw;
+    font-weight: 700;
+    line-height: 14vw;
+    position: relative;
+}
+
+.page1 .video-conainer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.video-conainer video{
+    width: 100%;
+    /* height: 100vh; */
+}
+.video-conainer .play{
+    position: fixed;
+    padding: 3vw 2.5vw;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    opacity: 0;
+    scale: 0;
+}
+
+#page1half{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+.page2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 1vw;
+}
+
+.page2 .element{
+    width: 30vw;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2 .element img{
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+}
+.element .dets{
+    width: 80%;
+    height: 40px;
+    background-color: #e7d497;
+    position: absolute;
+    z-index: 9;
+    border-radius: 50px;
+}
+.page3{
+    padding: 4vw 0;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 9rem;
+    padding-bottom: 10vw;
+}
+
+.page3 .child{
+    width: 40vw;
+    height: 70vh;
+}
+.child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.child h5{
+    padding-top: 1vw;
+    text-align: center;
+}
+#child1 span{
+    text-align: center;
+}
+.cursor{
+    width: 170px;
+    height: 170px;
+    background-color: rgba(213, 212, 212, 0.76);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+.child:hover{
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .page1{
+        height: 60vh;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    #page1half{
+        width: 100%;
+        height: 0vh;
+        background-color: transparent;
+    }
+    .nav h3{
+        font-size: 5vw;
+        line-height: 4vw;
+        letter-spacing:-.3px;
+    }
+    .links{
+       display: none;
+    }
+    .icons{
+        gap: 20px;
+        padding: 9px 10px;
+    }
+    .icons i{
+        font-size: .7rem;
+    }
+    .nav{
+        padding-bottom: 15vw;
+    }
+    .page1 h1{
+        font-size: 13vw;
+        line-height: 14vw;
+        letter-spacing: 2px;
+    }
+    .video-conainer .play{
+        position: absolute;
+        padding: 6vw 3vw;
+        border-radius: 50%;
+        background-color: #000;
+        color: #fff;
+        opacity: 1;
+        scale: 1;
+        top: 10%;
+        left: 40%;
+    }
+    .page2{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1vw 1vw;
+        gap: 5px;
+    }
+    
+    .page2 .element{
+        width: 100%;
+        height: 100vh;
+    }
+    .page2 .element img{
+        width: 100%;
+        height: 80%;
+        scale: 1.2;
+    }
+    .element .dets{
+        height: 20px;
+    }
+    .page3{
+        
+        flex-direction: column;
+    }
+    .page3 .child{
+        padding: 2rem;
+        width: 100vw;
+    }
+    .child img{
+        border-radius: 10px;
+    }
+}
